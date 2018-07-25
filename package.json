@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ServerHTTP.js"
+  },
+  "keywords": [
+    "APIRestful"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosePMarin/Backend.git"
+  },
+  "author": "Jose Pablo Marin Valera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JosePMarin/Backend/issues"
+  },
+  "homepage": "https://github.com/JosePMarin/Backend#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.4",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
