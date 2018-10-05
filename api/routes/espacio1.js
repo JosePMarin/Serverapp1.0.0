@@ -13,11 +13,12 @@ router.get('/',(req, res, next) => {
     Espacio1.find()
     .exec()
     .then(docs => {
-        console.log(docs);
+        console.log("From DB",docs);
         // if(docs.length>=0){
-        res.status(200).json(docs);
-        res.json({message: "Handling Get request to espacio1"});            
-        // }else{
+        res.json(docs);
+        res.status(200);
+                    
+        // }else{}
         //     res.status(404).json({
         //         message: "No entries found"
         //     });
@@ -25,9 +26,10 @@ router.get('/',(req, res, next) => {
     })
     .catch(err=> {
         console.log(err);
-        res.status(500).json({
+        res.json({
             error:err
         });
+        res.status(500);
     });
 });
 

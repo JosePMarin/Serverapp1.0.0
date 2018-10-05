@@ -25,7 +25,7 @@ app.use(morgan("dev"));
 //body parser: makes possible to insert or extract json data in the app
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
-//Cors error avoiding  (allows other APIs to access my API) *= allows any domain to get access
+//Cors error avoiding  (allows other APIs to access my API and browsers) *= allows any domain to get accessed
 app.use((req, res, next)=> {
     res.header("Access-Control-Allow-Origin","*");
     res.header("Access-Control-Allow-Headers","Origin, X-Requested-With, Content-Type, Accept, Authorization");
